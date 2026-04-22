@@ -69,7 +69,7 @@ for (let movie in leastFavMovies) {
 } */
 
 //STEP 9
-let fmovies =[]
+/* let fmovies =[]
 fmovies = ['Glory', 'Brave Heart', 'Wonder Woman', 'Rambo ', 'Spirited Away', 'A Shot in the Dark', 'Jurassic Park'] 
 let leastFavMovies =[]
 leastFavMovies[0] = 'Coctail'
@@ -81,12 +81,56 @@ console.log('All movies: \n')
 //display reverse sorted 
 movies = movies.sort()
 console.log(movies.reverse())
-
+ */
 //STEP 10
+/* let fmovies =[]
+fmovies = ['Glory', 'Brave Heart', 'Wonder Woman', 'Rambo ', 'Spirited Away', 'A Shot in the Dark', 'Jurassic Park'] 
+let leastFavMovies =[]
+leastFavMovies[0] = 'Coctail'
+leastFavMovies[1] = 'Scary Movie'
+leastFavMovies[2] = 'The Smurfs'
+//join with concat 
+let movies = fmovies.concat(leastFavMovies)
+console.log('Last movie: ')
+//display reverse sorted 
+movies = movies.sort()
+let movie = movies.reverse().pop()                                                                                                      
+console.log(movie) */
 
 //STEP 11
+/* let fmovies =[]
+fmovies = ['Glory', 'Brave Heart', 'Wonder Woman', 'Rambo ', 'Spirited Away', 'A Shot in the Dark', 'Jurassic Park'] 
+let leastFavMovies =[]
+leastFavMovies[0] = 'Coctail'
+leastFavMovies[1] = 'Scary Movie'
+leastFavMovies[2] = 'The Smurfs'
+//join with concat 
+let movies = fmovies.concat(leastFavMovies)
+console.log('First movie: ')
+//display reverse sorted 
+movies = movies.sort()
+let movie = movies.reverse().shift()                                                                                                      
+console.log(movie) */
 
 //STEP 12
+let fmovies =[]
+fmovies = ['Glory', 'Brave Heart', 'Wonder Woman', 'Rambo ', 'Spirited Away', 'A Shot in the Dark', 'Jurassic Park'] 
+let leastFavMovies =[]
+leastFavMovies[0] = 'Coctail'
+leastFavMovies[1] = 'Scary Movie'
+leastFavMovies[2] = 'The Smurfs'
+//join with concat 
+let movies = fmovies.concat(leastFavMovies)
+let indices = leastFavMovies.map(movie => movies.indexOf(movie));
+let likedMovies = ['Inception', 'Spider-Man: Into The Spider-Verse', 'Howl\'s Moving Castle'];
+//replace those indices with good ones
+indices.forEach((index, i) => {
+    if (index !== -1) { 
+        movies[index] = likedMovies[i];
+    }
+});
+console.log('All movies: ')
+console.log(movies)
 
 //STEP 13
 
